@@ -25,6 +25,7 @@ model Customer {
   id        String   @id @default(cuid())
   lastNae   String?
   orders    Order[]
+  phone     String?
   updatedAt DateTime @updatedAt
 }
 

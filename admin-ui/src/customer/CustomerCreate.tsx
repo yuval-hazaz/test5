@@ -8,6 +8,7 @@ export const CustomerCreate = (props: CreateProps): React.ReactElement => {
         <TextInput label="Email" source="email" type="email" />
         <TextInput label="First Name" source="firstName" />
         <TextInput label="Last Nae" source="lastNae" />
+        <TextInput label="phone" source="phone" />
       </SimpleForm>
     </Create>
   );
