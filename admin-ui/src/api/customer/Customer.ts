@@ -7,5 +7,6 @@ export type Customer = {
   id: string;
   lastNae: string | null;
   orders?: Array<Order>;
+  phone: string | null;
   updatedAt: Date;
 };

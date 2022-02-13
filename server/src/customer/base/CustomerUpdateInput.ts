@@ -46,5 +46,16 @@ class CustomerUpdateInput {
     nullable: true,
   })
   lastNae?: string | null;
+
+  @ApiProperty({
+    required: false,
+    type: String,
+  })
+  @IsString()
+  @IsOptional()
+  @Field(() => String, {
+    nullable: true,
+  })
+  phone?: string | null;
 }
 export { CustomerUpdateInput };

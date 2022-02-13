@@ -60,5 +60,16 @@ class CustomerWhereInput {
     nullable: true,
   })
   lastNae?: StringNullableFilter;
+
+  @ApiProperty({
+    required: false,
+    type: StringNullableFilter,
+  })
+  @Type(() => StringNullableFilter)
+  @IsOptional()
+  @Field(() => StringNullableFilter, {
+    nullable: true,
+  })
+  phone?: StringNullableFilter;
 }
 export { CustomerWhereInput };
